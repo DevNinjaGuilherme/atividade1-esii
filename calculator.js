@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')(); 
+
 // retorna o valor da soma entre os dois parâmetros
 function sum(v1, v2) {
     return v1 + v2;
@@ -31,15 +33,46 @@ function square(v1) {
     return Math.sqrt(v1);
 }
 
-
 // Retorno das Funções
 
-console.log(sum(8,2));
+let resultado = 0;
+let n1 = 0;
+let n2 = 0;
 
-console.log(sub(4,2));
+while (true) {
+    console.log("Menu:");
+    console.log("1. Raiz Quadrada");
+    console.log("2. Multiplicação");
+    console.log("3. Divisão");
+    console.log("4. Subtração");
+    console.log("5. Soma");
+    console.log("6. Apagar Resultado");
+    console.log("0. Sair");
 
-console.log(div(6,2));
+    const opcao = parseInt(prompt("Escolha uma opção:"));
+    
+    if (opcao === 0) {
+        break;
+    }
+    switch (opcao) {
+        case 1:
+            if (resultado === 0) {
+                n1 = parseInt(prompt("Digite o valor:"));
+                resultado = square(n1);
+            } else {
+                resultado = square(resultado);
+            }
+            console.log("Resultado:", resultado);
+            break;
+            
+            // Terminar os cases 2, 3, 4, 5, conforme o menu.
 
-console.log(mult(4,2));
-
-console.log(square(4));
+            case 6:
+                resultado = 0;
+                console.log("Resultado apagado.");
+                break;
+            default:
+                console.log("Opção inválida.");
+                break;
+        }
+    }
