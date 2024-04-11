@@ -6,7 +6,7 @@
 
 ## Instalação do Projeto
 
-Não requerida.
+npm i prompt-sync
 
 ## Executando a aplicação
 
@@ -17,5 +17,6 @@ $ node calculator.js
 
 ## 🤝 Contribuídores
 
-<a href="https://github.com/felipehaertelsenac"><img src="https://github.com/felipehaertelsenac.png" width="45" height="45"></a> &nbsp;
-
+<a href="https://github.com/DevNinjaGuilherme"><img src="https://github.com/DevNinjaGuilherme.png" width="45" height="45"></a> &nbsp;
+<a href="https://github.com/Gerson-Clara"><img src="https://github.com/Gerson-Clara.png" width="45" height="45"></a> &nbsp;
+<a href="https://github.com/Dollynski"><img src="https://github.com/Dollynski.png" width="45" height="45"></a> &nbsp;
