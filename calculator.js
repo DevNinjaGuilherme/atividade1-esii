@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')(); 
+const prompt = require('prompt-sync')();
 
 // retorna o valor da soma entre os dois parâmetros
 function sum(v1, v2) {
@@ -7,12 +7,12 @@ function sum(v1, v2) {
 
 // retorna o valor da subtração entre os dois parâmetros
 function sub(v1, v2) {
-  return v1 - v2;
+    return v1 - v2;
 }
 
 // retorna o valor da divisão entre os dois parâmetros
 function div(v1, v2) {
-    let resultado = v1/v2
+    let resultado = v1 / v2
 
     return resultado
 }
@@ -50,7 +50,7 @@ while (true) {
     console.log("0. Sair");
 
     const opcao = parseInt(prompt("Escolha uma opção:"));
-    
+
     if (opcao === 0) {
         break;
     }
@@ -64,15 +64,38 @@ while (true) {
             }
             console.log("Resultado:", resultado);
             break;
-            
-            // Terminar os cases 2, 3, 4, 5, conforme o menu.
-
-            case 6:
-                resultado = 0;
-                console.log("Resultado apagado.");
-                break;
-            default:
-                console.log("Opção inválida.");
-                break;
-        }
+        
+        case 2:
+            if (resultado === 0) {
+                n1 = parseInt(prompt("Digite o primeiro valor:"));
+                n2 = parseInt(prompt("Digite o segundo valor:"));
+                resultado = mult(n1, n2);
+            } else {
+                n2 = parseInt(prompt("Digite o valor:"));
+                resultado = mult(resultado, n2);
+            }
+            console.log("Resultado:", resultado);
+            break;
+        
+        case 3:
+            if (resultado === 0) {
+                n1 = parseInt(prompt("Digite o primeiro valor:"));
+                n2 = parseInt(prompt("Digite o segundo valor:"));
+                resultado = div(n1, n2);
+            } else {
+                n2 = parseInt(prompt("Digite o valor:"));
+                resultado = div(resultado, n2);
+            }
+            console.log("Resultado:", resultado);
+            break;
+        
+        case 6:
+            resultado = 0;
+            console.log("Resultado apagado.");
+            break;
+        
+        default:
+            console.log("Opção inválida.");
+            break;
     }
+}
