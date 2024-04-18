@@ -89,6 +89,30 @@ while (true) {
             console.log("Resultado:", resultado);
             break;
         
+        case 4:
+            if (resultado === 0) {
+                n1 = parseInt(prompt("Digite o primeiro valor:"));
+                n2 = parseInt(prompt("Digite o segundo valor:"));
+                resultado = sub(n1, n2);
+            } else {
+                n2 = parseInt(prompt("Digite o valor:"));
+                resultado = sub(resultado, n2);
+            }
+            console.log("Resultado:", resultado);
+            break;
+            
+        case 5:
+            if (resultado === 0) {
+                n1 = parseInt(prompt("Digite o primeiro valor:"));
+                n2 = parseInt(prompt("Digite o segundo valor:"));
+                resultado = sum(n1, n2);
+            } else {
+                n2 = parseInt(prompt("Digite o valor:"));
+                resultado = sum(resultado, n2);
+            }
+            console.log("Resultado:", resultado);
+            break;    
+
         case 6:
             resultado = 0;
             console.log("Resultado apagado.");
