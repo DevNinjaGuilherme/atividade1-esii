@@ -21,11 +21,11 @@ Além disso, nós também resolvemos desenvolver um menu para a aplicação calc
 
 
 #### Exemplo de cálculo raiz quadrada de um número e de seu resultado, consecutivamente:
-<img width="730" alt="image" src="/img/Exemplo1.png">
+<img width="450" alt="image" src="/img/Exemplo1.png">
 
 
 #### Exemplo de cálculo que inicia com 2 variáveis e a partir de seu segundo cálculo, é feito outros cálculos com base na variável resultado:
-<img width="733" alt="image" src="/img/Exemplo2.png">
+<img width="450" alt="image" src="/img/Exemplo2.png">
 
 
 Checklist:
